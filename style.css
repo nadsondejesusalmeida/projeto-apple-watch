@@ -1,0 +1,417 @@
+@charset 'UTF-8';
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	min-height: 100dvh;
+	font-family: 'San Francisco';
+}
+
+nav {
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow:  1px 0 0.5px #000000;
+}
+
+nav > ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style-type: none;
+}
+
+nav > ul > #nav-links {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav > ul li {
+	padding: 10px 15px;
+	height: 100%;
+}
+
+nav > ul li:first-child {
+	margin-right: auto;
+}
+
+nav > ul li:not(#logo) {
+	cursor: pointer;
+}
+
+nav > ul li:not(#logo):hover {
+	background-color: #F0F0F0;
+}
+
+nav > ul #logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+
+nav > ul #logo p {
+	font-weight: bold;
+}
+
+nav > ul li svg {
+	display: block;
+}
+
+#product {
+	padding: 0 15px 10px;
+	display: flex;
+}
+
+#product-options {
+	flex-grow: 0;
+	flex-basis: 33.33%;
+}
+
+#product-options {
+	display: flex;
+	flex-direction: column;
+}
+
+#product-options > h1 {
+	width: 20rem;
+	font-size: 2rem;
+}
+
+.prices {
+	margin: 0.875rem 0 0;
+	padding: 0 0 0.625rem;
+	font-size: 1.1rem;
+}
+
+.prices p:first-child {
+	margin-right: 0.3rem;
+}
+
+.prices p {
+	width: fit-content;
+}
+
+.prices #installments {
+	font-size: 0.8rem;
+	color: #0066CC;
+	display: flex;
+}
+
+.prices #at-sight {
+	font-size: 0.8rem;
+}
+
+#options {
+	margin: 1.875rem 0 0;
+}
+
+#options h2 {
+	font-size: 1.1rem;
+}
+
+#options ul {
+	padding: 1.1rem 0 0 0;
+	display: flex;
+}
+
+#options ul li {
+	margin: 0 0.5rem 0.5rem 0;
+	list-style-type: none;
+}
+
+#options ul li input {
+	display: none;
+}
+
+#options ul li label {
+	width: 2.625rem;
+	height: 2.625rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#options ul li label img {
+	width: 2rem;
+	mix-blend-mode: color;
+}
+
+#options ul li input[type="radio"]:checked + label {
+	border-radius: 50%;
+	border: 0.125rem solid #0066CC;
+}
+
+#carbon-label {
+	padding: 0.125rem 0 1rem 0.1875rem;
+	display: flex;
+	align-items: center;
+}
+
+#carbon-label img {
+	width: 1.5625rem;
+}
+
+#carbon-label p {
+	font-size: 0.75rem;
+}
+
+#box-size {
+	margin-top: 1.875rem;
+}
+
+#box-size > div#size-options {
+	display: flex;
+	gap: 0.9375rem;
+}
+
+#box-size > div#size-options input {
+	display: none;
+}
+
+#box-size > div#size-options label {
+	margin-top: 0.875rem 0 0;
+	height: 5rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	align-items: center;
+	border: 0.00625rem solid #797979;
+	border-radius: 0.625rem;
+	cursor: pointer;
+}
+
+#box-size > div#size-options input[type="radio"]:checked + label {
+	border: 0.125rem solid #0066CC;
+}
+
+#disclaimer {
+	margin-top: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.875rem;
+}
+
+#learn-more b {
+	margin-left: 0.2rem;
+}
+
+#additional-information {
+	margin-top: 0.875rem;
+	font-size: 0.875rem;
+}
+
+#secondary-information {
+	font-size: 0.75rem;
+	color: #6E6E73;
+}
+
+#delivery {
+	padding: 2rem 0 0;
+	font-size: 0.875rem;
+	display: flex;
+	position: relative;
+}
+
+#delivery #icon {
+	position: absolute;
+	top: 2rem;
+}
+
+#delivery #delivery-information {
+	line-height: 1.3rem;
+	position: relative;
+	left: 2rem;
+}
+
+#delivery span {
+	font-weight: bold;
+}
+
+#purchase {
+	margin: 2.2rem 0;
+}
+
+#purchase #add-to-bag {
+	margin-bottom: 1rem;
+	padding: 0.45rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-align: center;
+	width: 100%;
+	background-color: #0071E3;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 0.625rem;
+	cursor: pointer;
+}
+
+#buy-later {
+	padding: 1.5rem 0 0;
+}
+
+#buy-later span {
+	font-weight: bold;
+}
+
+#buy-later p {
+	margin: 0 1.25rem 0 0;
+}
+
+#buy-later p:has(> svg) {
+	padding: 0.5rem 0 0;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+}
+
+#visualization {
+	margin: 0 0 0 5rem;
+	flex-grow: 0;
+	flex-basis: 66.66%;
+}
+
+#image-visualization {
+	transition: transform 0.5s ease-in-out;
+}
+
+#select-image {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+#select-image li {
+	padding: 0 1rem 0 0;
+}
+
+#select-image input {
+	display: none;
+}
+
+#select-image input[type="radio"]:checked + label > img {
+	border-color: #D2D2D6;
+}
+
+#select-image label:hover {
+	border-color: #E8E8ED;
+}
+
+#select-image label > img {
+	padding: 0.25rem;
+	padding-bottom: 0.5rem;
+	width: 2.875rem;
+	border-bottom: 0.125rem solid hsla(0, 0%, 100%, 0);
+	cursor: pointer;
+}
+
+.link {
+	color: #0066CC;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.small-box {
+	transform: scale(0.9);
+}
+
+@media screen and (max-width: 400px) {
+	#nav-links {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 998;
+	}
+	
+	nav > ul > #nav-links {
+		width: 350px;
+		height: 100dvh;
+		display: none;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 999;
+		background-color: #DDDDDD;
+	}
+	
+	nav > ul #close-menu-button {
+		width: 50px;
+		height: 50px;
+		display: inline;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	
+	nav > ul > #nav-links li {
+		height: 50px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	
+	#product {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#visualization {
+		margin: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#image-visualization {
+		width: 200px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.hide-on-mobile {
+		display: block;
+	}
+	
+	nav > ul #logo p {
+		display: none;
+	}
+	
+	#nav-links {
+		display: flex;
+	}
+	
+	#open-menu-button,
+	#close-menu-button {
+		display: none;
+	}
+}

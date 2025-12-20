@@ -21,7 +21,6 @@ body {
 nav {
 	width: 100%;
 	background-color: #FFFFFF;
-	box-shadow:  1px 0 0.5px #000000;
 }
 
 nav > ul {
